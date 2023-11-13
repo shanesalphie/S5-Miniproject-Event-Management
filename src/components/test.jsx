@@ -1,5 +1,5 @@
 import React from 'react';
-import './Test.css'; // Make sure to create a CSS file for styling
+import './test.css'; // Make sure to create a CSS file for styling
 
 class Test extends React.Component {
     redirectToBookingPage = () => {
