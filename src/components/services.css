@@ -1,14 +1,18 @@
 .service {
     background-color: white;
     color: goldenrod;
-    font-family: 'Arial', sans-serif;
+}
+
+.container{
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .heading {
     text-align: center;
     padding: 20px;
-    background-color: goldenrod;
-    color: white;
+    color: goldenrod;
+    font-size: 50px;
 }
 
 .navi {
@@ -18,23 +22,20 @@
     background-color: goldenrod;
     padding: 20px;
     box-sizing: border-box;
-}
-
-.main {
-    float: left;
-    width: 80%; 
-    padding: 20px;
-    box-sizing: border-box;
-}
-
+}   
 .services {
     margin-bottom: 20px;
+    display: flex;
+    gap: 30px;
 }
 
 .event {
-    border: 1px solid goldenrod;
+    background-color: goldenrod;
     padding: 10px;
     margin-bottom: 10px;
+    color: white;
+    width: 500px;
+    height: 250px;
 }
 
 .book-btn {
@@ -45,4 +46,14 @@
     display: inline-block;
     margin-top: 10px;
     cursor: pointer;
+    border: 1px solid white;
+    height: 40px;
+    width: 100px;
 }
+.book-btn:hover{
+    background-color: white;
+    color: goldenrod;
+    border: 1px solid goldenrod;
+    transition: all linear 0.3s;
+}
+
