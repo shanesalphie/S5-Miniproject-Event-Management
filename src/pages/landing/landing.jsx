@@ -6,6 +6,7 @@ import profileIcon from "../../assets/profile.svg"
 import heroImage from "../../assets/hero.webp"
 import servicesImage from "../../assets/services.webp"
 import flower from "../../assets/flower.svg"
+import { Link } from 'react-router-dom';
 
 export default function Landing() {
     return (
@@ -18,7 +19,7 @@ export default function Landing() {
                 <div className="nav">
                     <div className="nav-items">
                         <a href="#about">About</a>
-                        <a href="#about">Services</a>
+                        <Link to='/services' >Services</Link>
                         <a href="#features">Features</a>
                         <a href="#contact">Contact Us</a>
                         <a href="#gallery">Gallery</a>
@@ -36,9 +37,9 @@ export default function Landing() {
 
             <div className="service_details">
                 <div className="details_container">
-                    <h1>OUR SERVICES</h1>
+                    <h1 className='heading_1'>OUR SERVICES</h1>
                     <img src={flower} width={50} />
-                    <h3>Leave the Details to us</h3>
+                    <h3 className='heading_2'>Leave the Details to us</h3>
                     <button className='learn_more'>LEARN MORE</button>
                 </div>
                 <div className="service_image"  style={{ backgroundImage: `url(${servicesImage})` }}></div>

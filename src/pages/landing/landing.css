@@ -65,16 +65,13 @@
   text-align: center;
 }
 
-.details_container > h1,
-h3,
-button,
-img {
+.details_container > .heading_1, .heading_2, .learn_more, img {
   position: relative;
   font-weight: 100;
   top: 25%;
 }
 
-.details_container > button {
+.details_container > .learn_more {
   font-family: "Raleway", sans-serif;
   width: 50%;
   height: 50px;
@@ -84,13 +81,13 @@ img {
   font-size: large;
 }
 
-.details_container > button:hover {
+.details_container > .learn_more:hover {
   transition: all linear 0.3s;
   background-color: white;
   color: rgb(175, 148, 83);
 }
 
-.details_container > h1 {
+.details_container > .heading_1 {
   letter-spacing: 10px;
 }
 
