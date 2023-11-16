@@ -1,15 +1,21 @@
-.loginForm {
+.loginForm, .registerForm {
     width: 300px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .input {
@@ -17,6 +23,7 @@
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    padding-top: 10px;
 }
 
 .button {
@@ -32,4 +39,9 @@
 .error {
     color: red;
     margin-top: 10px;
+}
+
+.register_option{
+    padding-top: 15px;
+    text-align: center;
 }
