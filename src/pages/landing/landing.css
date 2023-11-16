@@ -15,11 +15,11 @@
   align-items: center;
 }
 
-.nav > .login {
+.nav>.login {
   padding-left: 5rem;
 }
 
-.nav-items > a {
+.nav-items>a {
   padding-left: 4rem;
   color: #000;
   text-decoration: none;
@@ -37,6 +37,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .title {
   position: absolute;
   top: 50%;
@@ -65,13 +66,16 @@
   text-align: center;
 }
 
-.details_container > .heading_1, .heading_2, .learn_more, img {
+.details_container>.heading_1,
+.heading_2,
+.learn_more,
+img {
   position: relative;
   font-weight: 100;
   top: 25%;
 }
 
-.details_container > .learn_more {
+.details_container>.learn_more {
   font-family: "Raleway", sans-serif;
   width: 50%;
   height: 50px;
@@ -81,13 +85,13 @@
   font-size: large;
 }
 
-.details_container > .learn_more:hover {
+.details_container>.learn_more:hover {
   transition: all linear 0.3s;
   background-color: white;
   color: rgb(175, 148, 83);
 }
 
-.details_container > .heading_1 {
+.details_container>.heading_1 {
   letter-spacing: 10px;
 }
 
@@ -99,4 +103,22 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: goldenrod;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1;
+  border-radius: 10%;
+}
+
+.dropdown-item {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #fff;
 }

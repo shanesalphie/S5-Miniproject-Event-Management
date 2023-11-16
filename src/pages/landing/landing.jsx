@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import "./landing.css"
 import logo from "../../assets/logo.png"
@@ -9,6 +9,10 @@ import flower from "../../assets/flower.svg"
 import { Link } from 'react-router-dom';
 
 export default function Landing() {
+    const [showDropdown, setShowDropdown] = useState(false);
+
+
+
     return (
         <div className="landing">
 
@@ -25,7 +29,13 @@ export default function Landing() {
                         <a href="#gallery">Gallery</a>
                     </div>
                     <div className="login">
-                        <img src={profileIcon} width={30} />
+                        <img src={profileIcon} width={30} onClick={() => setShowDropdown(!showDropdown)} />
+                        {showDropdown && (
+                            <div className="dropdown">
+                                <Link to={'/login'} className="dropdown-item">Login</Link>
+                                <Link to={'/register'} className="dropdown-item">Sign Up</Link>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
@@ -42,7 +52,7 @@ export default function Landing() {
                     <h3 className='heading_2'>Leave the Details to us</h3>
                     <button className='learn_more'>LEARN MORE</button>
                 </div>
-                <div className="service_image"  style={{ backgroundImage: `url(${servicesImage})` }}></div>
+                <div className="service_image" style={{ backgroundImage: `url(${servicesImage})` }}></div>
             </div>
         </div>
     )
